@@ -1,8 +1,9 @@
 import './App.css'
+import SignUp from './pages/SignUp'
 
 function App() {
-  return <div className='bg-red-400'>
-    Hii there
+  return <div>
+    <SignUp />
   </div>  
 }
 
