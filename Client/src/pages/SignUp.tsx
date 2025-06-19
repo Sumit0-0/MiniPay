@@ -1,5 +1,5 @@
-import Input from "./components/Input";
-import Label from "./components/Label";
+import Input from "../components/Input";
+import Label from "../components/Label";
 
 const SignUp = () => {
   return <div className="bg-blue-100 flex justify-center items-center w-full h-screen">
