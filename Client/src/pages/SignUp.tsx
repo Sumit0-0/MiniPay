@@ -11,22 +11,22 @@ const SignUp = () => {
       </div>
       </div>
       <div>
-          <form method="Post" className="pl-6">
+          <form action={"localhost:3000/api/v1/signup"} method="Post" className="pl-6">
             <div>
               <Label title={"First Name"} />
-              <Input type={"text"} placeholder={"John"} />
+              <Input type={"text"} placeholder={"John"} name="fisrtName" />
             </div>
             <div>
              <Label title="Last Name" />
-             <Input type={"text"} placeholder={"Doe"} />
+             <Input type={"text"} placeholder={"Doe"} name="lastName"/>
             </div>
             <div>
               <Label title="Email" />
-             <Input type={"email"} placeholder={"abc@gmail.com"} />
+             <Input type={"email"} placeholder={"abc@gmail.com"} name="email"/>
             </div>
             <div>
              <Label title="Password" />
-             <Input type={"password"} placeholder={"123"} />
+             <Input type={"password"} placeholder={"123"} name="password"/>
             </div>
             <button type="submit"
             className="bg-zinc-800 text-white w-[22vw] py-2 rounded-lg mt-4 text-2xl hover:bg-zinc-950 shadow-md">Sign in</button>
