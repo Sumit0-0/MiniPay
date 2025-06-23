@@ -1,9 +1,8 @@
-import { PrismaClient } from "@prisma/client";
+import { prisma } from "../../routes/pageRoutes"
 import { Request, Response } from 'express';
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-const prisma = new PrismaClient();
 
 const signin = async (req: Request, res: Response) => {
   try{

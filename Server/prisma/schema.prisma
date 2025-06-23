@@ -9,9 +9,33 @@ datasource db {
 }
 
 model User {
-  id        Int     @id     @default(autoincrement()) @unique
+  id        String  @id     @default(uuid()) 
   firstName String
   lastName  String
   email     String  @unique
   password  String
+  transactions  Transactions[]
+  wallet    Wallet?
+  PhNumber  PhoneNumber?
+}
+
+model Wallet {
+  amount   String
+  id       String   @id      @default(uuid())
+  userId   String @unique
+  user     User     @relation(fields: [userId],references: [id])
+}
+
+model PhoneNumber {
+  id        Int     @id     @default(autoincrement())
+  number    String     @unique
+  userId    String  @unique
+  user      User    @relation(fields: [userId],references: [id])
+}
+
+model Transactions {
+  id      String  @id   @default(uuid())
+  userId  String
+  user    User  @relation(fields: [userId], references: [id])
+  amount  String
 }

@@ -1,8 +1,6 @@
 import { Request, Response } from "express";
 import bcrypt from "bcrypt";
-import { PrismaClient } from "@prisma/client";
-
-const prisma =new PrismaClient();
+import { prisma } from "../../routes/pageRoutes"
 
 const registeration = async (req: Request, res: Response) => {
   try{
