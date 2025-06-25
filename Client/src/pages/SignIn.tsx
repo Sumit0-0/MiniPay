@@ -25,8 +25,6 @@ const SignIn = () => {
       navigate("/dashboard");
 
     } else {
-      const error = await res.json();
-      alert("Login failed: " + error.message);
       alert("Wrong email or password")
     }
   };

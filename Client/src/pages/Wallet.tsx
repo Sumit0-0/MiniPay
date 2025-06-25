@@ -28,6 +28,7 @@ const Wallet = (props: PropTypes) => {
       const res = await fetch(`http://localhost:3000/api/v1/wallet`,{
       method: "POST",
       headers: {
+        "Content-Type": "application/json",
         "token": token
       },
       body: JSON.stringify(sendData)
@@ -36,6 +37,7 @@ const Wallet = (props: PropTypes) => {
     if(res.ok){
       alert("Wallet Created Successfully");
     }else{
+      console.log("error",res.json());
       alert("Already have an account with this number or Wrong number")
     }
     props.setToggle(false);
