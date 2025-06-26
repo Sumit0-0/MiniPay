@@ -1,16 +1,34 @@
+import { useNavigate } from "react-router-dom";
+
 interface PropTypes1 {
   toggle: boolean,
   setToggle: (via: boolean) => void
 }
 
 const BottomContent = (props: PropTypes1) => {
+  const navigate = useNavigate();
+
+  function handle(){
+    localStorage.removeItem("token");
+    navigate("/");
+    return;
+  }
+
+  function handle2(){
+    navigate("/transactions");
+    return;
+  }
   return (
     <div className="bg-white mt-7 rounded-lg py-8 flex justify-center items-center gap-20">
+       <button onClick={handle2}>
         <Box title={"Transactions History"} />
+       </button>
        <button onClick={ ()=> props.setToggle(!props.toggle) }> 
         <Box title={"Create Wallet"} />
        </button>
-        <Box title={"Sign Out"} />
+        <button onClick={handle}>
+          <Box title={"Sign Out"} />
+        </button>
     </div>
   )
 }

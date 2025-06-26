@@ -5,6 +5,7 @@ import SignUp from './pages/SignUp'
 import Dashboard from './pages/Dashboard'
 import Wallet from './pages/Wallet'
 import { BrowserRouter, Routes,Route, Navigate } from 'react-router-dom'
+import Transaction from './pages/Transaction'
 
 function App() {
   return <div>
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<SignIn />}/>
         <Route path='/signup' element={<SignUp />} />
         <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/transactions' element={<Transaction />} />
         <Route path='*' element={<Navigate to="/dashboard" />} />
       </Routes>
    </BrowserRouter>
