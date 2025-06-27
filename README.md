@@ -47,5 +47,6 @@ This project reflects secure backend practices, clean React frontend structure, 
 
 ---
 
-## 🧠 Database Schema
+##  Database Schema
+![image alt](https://github.com/Sumit0-0/MiniPay/blob/5710f1aedb722747b62f59a1fb0f3d17fd4c00e8/Screenshot%202025-06-26%20231219.png)
 
