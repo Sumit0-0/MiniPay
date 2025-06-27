@@ -57,24 +57,26 @@ This project reflects secure backend practices, clean React frontend structure, 
 ## 📂 Folder Structure
 
 📁 MiniPay  
-├── client/                 # React frontend  
-│   ├── components/         # UI components  
-│   ├── pages/              # Login, Dashboard, etc.   
-│   ├── App.jsx             # App root  
-│   └── main.jsx            # Entry point  
-├── server/                 # Express backend  
-|   |──prisma/              # Prisma schema and client 
-|   |──src/
-│         ├── controllers/                        # Logic handlers
-|                        ├── authController       # Authentication Routes Logic
-|                        ├── crudController       # Crud Routes Logic
-│         ├── routes/                             # API endpoints    
-│         ├── middleware/                         # JWT verification  
-│         └── index.js                            # Server entry  
-├── .env
-|── .env.example
-├── README.md  
-└── package.json  
+├── client/                          # React frontend  
+│   ├── components/                 # UI components  
+│   ├── pages/                      # Login, Dashboard, etc.  
+│   ├── App.jsx                     # App root  
+│   └── main.jsx                    # Entry point  
+├── server/                          # Express backend  
+│   ├── prisma/                     # Prisma schema and client  
+│   └── src/                        
+│       ├── controllers/            # Logic handlers  
+│       │   ├── authController/     # Authentication routes logic  
+│       │   └── crudController/     # CRUD routes logic  
+│       ├── routes/                 # API endpoints  
+│       ├── middleware/             # JWT verification  
+│       └── index.js                # Server entry  
+├── .env                             # Environment variables  
+├── .env.example                     # Sample environment file  
+├── README.md                        # Project documentation  
+└── package.json                     # Project metadata and scripts  
+
+
 
 ## ⚙️ Installation & Run Instructions
 
