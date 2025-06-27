@@ -6,9 +6,9 @@ This project reflects secure backend practices, clean React frontend structure, 
 
 ---
 
-## 🎥 Demo
+## 🎬 Project Walkthrough (Video)
 
-![Demo](https://github.com/Sumit0-0/MiniPay/raw/562fe92d00d607b985cbef2d0c1a89630eea2c74/UiVideo-ezgif.com-optimize.gif)
+🎯 **[👉 Click here to download and watch the full video demo (MP4)](https://github.com/Sumit0-0/MiniPay/blob/168323f802572205d9a2904d378ffd0269111a35/Ui%20Video.mp4)**
 
 ---
 
